@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+body{
+    text-align: center; 
+    }
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-image: url(bg\ image\ 01.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px;
+    height: 90vh;
+    position: relative;
+}
+
+.logo{
+    
+    float: left;
+    width: 12%;
+    box-shadow: #0e0909;
+    padding-left: 30px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: #996767;
+    padding-right: 50px;
+   
+}
+.nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 1px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.nav ul li a{
+    color: #0e0909;
+    text-decoration: none;
+}
+.nav button:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.p{
+  text-align: center;
+  max-width: 600px;
+  margin-top: 90px ;
+  padding-left: 35%;
+
+}
+
+.searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    align-items: center;
+    border-radius: 50px;
+    color: rgb(2, 2, 2);
+    backdrop-filter: blur(1px) saturate(180%);
+    justify-content: center;
+    
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+ .AboutUs {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+
+  .AboutUs h1 {
+    margin-bottom: 20px;
+  }
+  
+  .AboutUs .img {
+    margin-bottom: 10px;
+    float: left;
+  }
+  
+  .AboutUs img {
+    width: 100%;
+    height: 60vh;
+    max-width: 500px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  aside {
+    display: inline-block;
+    max-width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #7a5252;
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #290909;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes space around items */
+    padding: 5px;
+    gap: 10px; 
+}
+
+.card {
+    width: 30%; /* You can adjust as needed */
+    box-sizing: border-box; /* Ensures padding/borders are included in width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
+ .card-btn:hover{
+     background-color: rgb(197, 197, 197);
+ }
+ .card{
+     width: 250px;
+     gap: 30px;
+    flex-direction: row; 
+     border: 1px solid #d1bdbd;
+     border-radius: 20px;
+     background-color: white;
+     box-shadow: 0 2px 7px black;
+     flex: 1; 
+     margin: 3%; 
+    
+ }
+ .card-img{
+    
+     border-radius: 50%; /* Make the image round */
+     width: 200px; /* Set width */
+     height: 200px; /* Set height */
+     object-fit: cover; /* Cover the area without distortion */
+ }
+ .card-content{
+     padding: 16px;
+ }
+ .card-title{
+     margin: 0;
+     font-size: 20px;
+     color: black;
+ }
+ .card-text{
+     margin: 1px 0;
+     font-size: 1em;
+     color: black;
+ }
+ .card-btn{
+     display: inline-block;
+     padding: 10px 15px;
+     margin-top: 10px;
+     background-color:black;
+     color: rgb(21, 26, 24);
+ }
+
+form{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  form h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ 
+
+  .contactUs {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contactUs img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contactUs form {
+    flex: 1;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contactUs h1 {
+    margin-bottom: 20px;
+}
+
+.contactUs label {
+    font-weight: bold;
+}
+
+.contactUs input, .contactUs textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contactUs button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactUs button:hover {
+    background-color: #0056b3;
+}
+ 
+
+  .heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.crds-container {
+    display: inline-block;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.crd {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.crd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.crd .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 0 0 10px 10px;
+}
+footer {
+    background-color:#7a5252; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer h3 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+.Abutus {
+    margin-top: 3px;
+    background-color: antiquewhite;
+    
+  }
+
+
+  .Abutus h1 {
+    margin-bottom: 20px;
+  }
+  
+  .Abutus .img {
+    margin-bottom: 10px;
+    float: left;
+  }
+  
+  .Abutus img {
+    width: 700px;
+    height: 400px;
+    max-width: 600px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .Abut {
+    margin-top: 3px;
+    background-color: antiquewhite;
+    
+  }
+
+
+  .Abut h1 {
+    margin-bottom: 30px;
+  }
+  
+  .Abut .img {
+    margin-bottom: 10px;
+    float: right;
+  }
+  
+  .Abut img {
+    width: 700px;
+    height: 400px;
+    max-width: 600px;
+    float: right;
+    margin-left: 20px;
+  }
+
+
+/* Navbar styling */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #d1bdbd;
+}
+
+/* Silk Collection */
+.colection {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 20px; /* Gap between cards */
+    margin: 20px;
+    flex-direction: row;
+}
+
+.cards {
+    width: 100%;
+    border: 1px solid #d1bdbd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.cards-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the entire card area without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cards-content {
+    padding: 16px;
+}
+
+.cards-title {
+    font-size: 18px;
+    color: black;
+}
+
+.cards b {
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 100%;
+    }
+}
